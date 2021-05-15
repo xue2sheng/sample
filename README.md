@@ -2,6 +2,9 @@
 
 Fooling around with [Rust for Windows](https://github.com/microsoft/windows-rs) following its [Youtube video](https://www.youtube.com/watch?v=-oZrsCPKsn4)
 
+![app](images/app.png)
+[app.png](images/app.png)
+
 ## Toolchain
 
 In order not to depend on Visual Studio, do not forget to add as default toolchain *stable-x86_64-pc-windows-gnu* and remove any *-msvc* if any:
