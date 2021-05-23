@@ -3,20 +3,21 @@
 //}
 
 use bindings::{
-    Windows::Data::Xml::Dom::*,
+//    Windows::Data::Xml::Dom::*,
     Windows::Win32::System::Threading::{CreateEventW, SetEvent, WaitForSingleObject},
     Windows::Win32::System::WindowsProgramming::CloseHandle,
     Windows::Win32::UI::WindowsAndMessaging::{MessageBoxA, MB_OK},
 };
 
 fn main() -> windows::Result<()> {
+/*
     let doc = XmlDocument::new()?;
     doc.LoadXml("<html>hello world</html>")?;
 
     let root = doc.DocumentElement()?;
     assert!(root.NodeName()? == "html");
     assert!(root.InnerText()? == "hello world");
-
+*/
     unsafe {
         let event = CreateEventW(std::ptr::null_mut(), true, false, None);
         SetEvent(event).ok()?;
