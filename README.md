@@ -13,6 +13,7 @@ rustup target add x86_64-pc-windows-gnu
 rustup toolchain install stable-x86_64-pc-windows-gnu
 rustup default stable-x86_64-pc-windows-gnu
 # rustup toolchain remove stable-x86_64-pc-windows-msvc
+# rustup target remove x86_64-pc-windows-msvc
 ```
 
 Double check your OK to go:
